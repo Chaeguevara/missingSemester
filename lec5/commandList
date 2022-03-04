@@ -1,0 +1,12 @@
+nohup --> "No Hangups"
+  |-> not to stop a command once it has started
+  |- which means doesn't finish even I logout from server or something
+  |- ex) "$ nohup sleep 2000 $" -> run nohup on background 
+
+jobs --> "show running processes"
+
+bg $1 --> "run the first job on background"
+
+kill -STOP $1 --> "Suspend the first job"
+
+kill -SIGHUP %1 --> "Kill the first job or hangup??"

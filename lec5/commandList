@@ -10,3 +10,24 @@ bg $1 --> "run the first job on background"
 kill -STOP $1 --> "Suspend the first job"
 
 kill -SIGHUP %1 --> "Kill the first job or hangup??"
+
+
+-----------------tmux------------------
+prefix - <C-b>
+split pane - <C-b> + %(vertically)
+           - <C-b> + "(Horizontally)
+Navigation - <C-b> + arrow keys
+Close pane - <C-d> or type "exit"
+
+# about window
+create new window - <C-b> + c
+navigte window - <C-b> + n or p (next or previous)
+               - <C-b> + <number> (go to the window number)
+
+# About Session
+detach session - <C-b> + d (current)
+               - <C-B> + D (gives choice)
+               --> You can detach and attatch to the desired position
+List up sessions - tmux ls
+attatch session - tmux attatch -t 0 (attatch the detached session to first part of "tmux ls")
+rename session - tmux rename-session -t 0 newName

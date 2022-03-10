@@ -1,0 +1,5 @@
+cat file1 --> show content
+sort -n file1 --> sort content by number value(ascending order)
+sort -M file1 --> if file contains like Jan, Feb, Mar... it sorts by month
+sort -r file1 -> reverse order(descending order)
+$ sort -t ':' -k 3 -n /etc/passwd --> in case of using seperator, specifiy sperator after '-t' and the filed number by '-k' 

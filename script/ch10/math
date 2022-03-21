@@ -1,0 +1,5 @@
+#!/bin/bash
+var1=`expr 1 + 5`
+var2=`expr 5 \* 2`
+echo $var1
+echo $var2

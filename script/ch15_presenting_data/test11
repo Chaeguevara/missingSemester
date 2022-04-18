@@ -1,0 +1,13 @@
+#!/bin/bash
+# exec 1>testout 아래 파일은 바로 testout에 write
+# exec 2>testerror로 정의하면 >&2로 된내용들은 error처리됨
+
+exec 2>testerror
+
+echo "This is the start of the script"
+echo "now redirecting all output to another location"
+
+exec 1>testout
+
+echo "This output should go to the testout file"
+echo "but this should go to the testerror file">&2

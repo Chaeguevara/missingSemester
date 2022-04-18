@@ -1,0 +1,9 @@
+#!/bin/bash
+# redirecting by using exec permanently
+# 해당 파일을 실행하면 echo내용이 testout에 모두 기록됨
+
+exec 1>testout
+
+echo "This is a test of redirecting all output"
+echo "from a script to another file."
+echo "without having to redirect every individual line"
